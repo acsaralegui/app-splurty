@@ -1,16 +1,13 @@
 @import "bootstrap";
 
-.clear {
-  clear: both;
-}
 
 .circle {
-    font-weight: bold;
+    font-weight:bold;
     font-style: italic;
     position: relative;
     border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #2F8BDB;
+    background: #2F8BDB;
+    border: 1px solid #F7F7F7;
     width: 80px;
     height: 80px;
     margin: 10px 10px;
@@ -19,10 +16,15 @@
     font-size: 10px;
     line-height: 16px;
     cursor: pointer;
-    transform: rotate(11deg);
-    -ms-transform: rotate(11deg); /* IE 9 */
-    -webkit-transform: rotate(11deg); /* Opera, Chrome, and Safari */
-  }
+    transform:rotate(11deg);
+    -ms-transform:rotate(11deg); /* IE 9 */
+    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+}
+
+.clear {
+  clear: both;
+}
+
 
 .slogan {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
@@ -46,4 +48,115 @@ header {
 
 hr {
   clear:both;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+body {
+  background: #0a0007;
+}
+.loading-icon,
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -42px;
+  margin-left: -42px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #888;
+  border-radius: 30px;
+}
+.loading-icon {
+  animation: rotate 2s linear infinite, color 4s linear infinite;
+}
+.inner {
+  animation: inner 2s linear infinite, color 4s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes rotate {
+  to {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+}
+
+@keyframes inner {
+  0% {
+    transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(0.86) rotate(45deg);
+    -webkit-transform: scale(0.86) rotate(45deg);
+  }
+  100% {
+    transform: scale(1) rotate(90deg);
+    -webkit-transform: scale(1) rotate(90deg);
+  }
+}
+@-webkit-keyframes inner {
+  0% {
+    transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(0.86) rotate(45deg);
+    -webkit-transform: scale(0.86) rotate(45deg);
+  }
+  100% {
+    transform: scale(1) rotate(90deg);
+    -webkit-transform: scale(1) rotate(90deg);
+  }
+}
+
+@keyframes color {
+  0% {
+    border-color: #ff4a4a;
+  }
+  25% {
+    border-color: #ec900d;
+  }
+  50% {
+    border-color: #409dd3;
+  }
+  75% {
+    border-color: #9f4aff;
+  }
+  100% {
+    border-color: #ff4a4a;
+  }
+}
+@-webkit-keyframes color {
+  0% {
+    border-color: #ff4a4a;
+  }
+  25% {
+    border-color: #ec900d;
+  }
+  50% {
+    border-color: #009cff;
+  }
+  75% {
+    border-color: #9f4aff;
+  }
+  100% {
+    border-color: #ff4a4a;
+  }
 }
