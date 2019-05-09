@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'kaushan_scriptregular';
-    src: font-url('kaushanscript-regular-webfont.woff2') format('woff2'),
-          font-url('kaushanscript-regular-webfont.woff') format('woff');
+    src: font-url('kaushanscript-regular-webfont.woff2') format('woff2');
+    src: font-url('kaushanscript-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
